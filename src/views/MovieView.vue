@@ -1,9 +1,10 @@
 <template>
   <div class="movieView container">
-    <h3 class="my-4">나만의 무비 컬렉션</h3>
-    <button v-if="movies.length === 0" @click="getMovieData" class="btn btn-primary">영화 가져오기</button>
+    <h3 class="mt-5 mb-4">나만의 무비 컬렉션</h3>
+    <button v-if="movies.length === 0" @click="getMovieData" class="btn get-movies-button">영화 가져오기</button>
 
     <MovieList :movies="movies"/>
+    <button v-if="movies.length > 0" @click="scrollToTop" class="button-bottom btn">Top</button>
   </div>
 </template>
 
@@ -27,12 +28,30 @@ export default {
   methods: {
     getMovieData(){
       axios.get(MOVIE_API_URL)
-        .then(res => 
-        this.movies = res.data
-        // console.log('밍?', res.data[0].poster_url)
-        )
+        .then(res => this.movies = res.data)
         .catch(err => console.error(err))
-    }
+    },
+    scrollToTop: function(){
+                scroll(0,0) 
+            },
   }
 }
 </script>
+
+<style>
+.button-bottom {
+    position: fixed;
+    right: 4vw;
+    bottom: 2vh;
+    border: 1px solid #3fb883;
+    padding: 4px 8px;
+    color: #3fb883;
+    font-weight: bold;
+}
+  .get-movies-button{
+    background-color: #3fb883;
+    color: white;
+  }
+
+  
+</style>

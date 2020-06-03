@@ -1,9 +1,9 @@
 <template>
   <div class="movieListItemModal">
-    <button class="btn btn-warning" data-toggle="modal" :data-target="`#movieDetail-${movie.id}`">영화 정보 상세보기</button>
+    <button class="btn modal-trigger-button" data-toggle="modal" :data-target="`#movieDetail-${movie.id}`">영화 정보 상세보기</button>
    
     <!-- Modal -->
-    <div class="modal fade" :id="'movieDetail-'+movie.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade " :id="'movieDetail-'+movie.id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -14,7 +14,7 @@
           </div>
           <div class="modal-body">
             <img class="card-img-top" :src="posterURL" alt="movie-poster-image">
-            <p class="bg-success">{{movie.user_rating}}</p>
+            <p class="rating-area">{{movie.user_rating}} 점</p>
             <div>{{movie.overview}}</div>
           </div>
           <div class="modal-footer">
@@ -42,5 +42,13 @@ export default {
 </script>
 
 <style>
+.modal-trigger-button{
+  background-color:  #3fb883;
+  color:white;
+}
 
+.rating-area{
+  background-color: #3fb883;
+  font-weight: bold;
+}
 </style>
