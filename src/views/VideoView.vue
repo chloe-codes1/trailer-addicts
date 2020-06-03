@@ -1,5 +1,6 @@
 <template>
   <div class="videoView container m-auto">
+      <div v-if="videos.length === 0" class="centered"></div>
       <h3 class="mt-5 mb-4">영화 예고편 검색</h3>
       <VideoSearch @input-change="onInputChange" />
       <div>
@@ -58,6 +59,11 @@ export default {
 </script>
 
 <style>
+    .centered {
+    height:100px;
+    }
+
+
     .videoView {
         margin : 20px;
     }

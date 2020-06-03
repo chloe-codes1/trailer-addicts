@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-     <nav class="navbar navbar-expand-sm navbar-light sticky-top d-inline-flex justify-content-between w-100" style="background-color:white; box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);">
-  <div class="navbar" style="position: absolute; left: 50%; top:0%; transform: translateX(-50%); ">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top d-inline-flex justify-content-between w-100" style="background-color:white; box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);">
+  <div class="navbar " style="position: absolute; left: 50%; top:0%; transform: translateX(-50%); ">
      <router-link to="/" class="text-decoration-none nav-links"> MOVIE BOX</router-link>
   </div>
   <div>

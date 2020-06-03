@@ -3,7 +3,7 @@
     <div class="card" style="width: 100%">
       <img class="card-img-top" :src="posterURL" alt="movie-poster-image">
       <div class="card-body">
-        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-title">{{movie.title}}</p>
         <MovieListItemModal :movie="movie"/>
       </div>
     </div>

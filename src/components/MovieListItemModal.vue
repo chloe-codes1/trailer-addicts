@@ -13,8 +13,8 @@
             </button>
           </div>
           <div class="modal-body">
-            <img class="card-img-top" :src="posterURL" alt="movie-poster-image">
-            <p class="rating-area">★ {{movie.user_rating}}</p>
+            <img class="card-img-top" :src="backdropURL" alt="movie-poster-image">
+            <p class="rating-area text-white">★ {{movie.user_rating}}</p>
             <div>{{movie.overview}}</div>
           </div>
           <div class="modal-footer">
@@ -34,8 +34,8 @@ export default {
     movie: Object
   },
   computed: {
-    posterURL() {
-      return this.movie.poster_url
+    backdropURL() {
+      return this.movie.backdrop_url
     }
   }
 }
@@ -45,6 +45,7 @@ export default {
 .modal-trigger-button{
   background-color:  #3fb883;
   color:white;
+  font-size: 0.9rem;
 }
 
 .rating-area{
