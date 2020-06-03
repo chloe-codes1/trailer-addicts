@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 .centered {
-  height:100px;
+  height:120px;
 }
 
 .button-bottom-clear {

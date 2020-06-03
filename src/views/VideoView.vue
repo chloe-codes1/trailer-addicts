@@ -1,7 +1,7 @@
 <template>
   <div class="videoView container m-auto">
       <div v-if="videos.length === 0" class="centered"></div>
-      <h3 class="mt-5 mb-4">영화 예고편 검색</h3>
+      <h3 class="mt-5 mb-4">예고편 검색</h3>
       <VideoSearch @input-change="onInputChange" />
       <div>
           <VideoItem :videos="videos"/> 
@@ -60,7 +60,7 @@ export default {
 
 <style>
     .centered {
-    height:100px;
+    height:120px;
     }
 
 
