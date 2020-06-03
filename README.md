@@ -1,24 +1,42 @@
-# vue_pjt1
+# Trailer Addicts
 
-## Project setup
-```
-npm install
-```
+> A simple website for viewing movie trailers 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+<br>
 
-### Compiles and minifies for production
-```
-npm run build
-```
+<br>
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Tech Stack
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- `Vue.js`
+- `Vue Router`
+- `Bootstrap`
+- `Axios`
+- `YouTube Data API`
+
+<br>
+
+<br>
+
+### Components
+
+![<](./README-images/component-structure.png)																												
+
+<br>
+
+<br>
+
+### Features
+
+- Movie Info
+  - Poster
+  - Title
+  - Rating
+  - Overview
+- Movie Trailers
+  - Movie trailers based on your search criteria using `YouTube Data API`
+
+<br>
+
+<br>
+
