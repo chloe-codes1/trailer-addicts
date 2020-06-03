@@ -1,7 +1,7 @@
 <template>
   <div class="videoItemDetail">
     <li @click="onVideoSelect" class="video-item list-group-item">
-      <div class="media-body">
+      <div class="media-body py-3">
         {{ video.snippet.title }}
       </div>
       <div class="embed-responsive embed-responsive-16by9">
