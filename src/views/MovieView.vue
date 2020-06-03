@@ -1,6 +1,7 @@
 <template>
   <div class="movieView container">
-    <h3 class="mt-5 mb-4">나만의 무비 컬렉션</h3>
+    <div v-if="movies.length === 0" class="centered"></div>
+    <h3 class="mt-5 mb-4">나만의 영화 저장소</h3>
     <button v-if="movies.length === 0" @click="getMovieData" class="btn get-movies-button">영화 가져오기</button>
 
     <MovieList :movies="movies"/>
@@ -39,6 +40,10 @@ export default {
 </script>
 
 <style scoped>
+.centered {
+  height:100px;
+}
+
 .button-bottom-clear {
     position: fixed;
     right: 4vw;
@@ -51,6 +56,7 @@ export default {
   .get-movies-button{
     background-color: #3fb883;
     color: white;
+    margin-top:20px;
   }
 
   
