@@ -1,5 +1,5 @@
 <template>
-  <div class="movieListItem col-3">
+  <div class="movieListItem col-md-12 col-lg-4 col-xl-3">
     <div class="card" style="width: 100%">
       <img class="card-img-top" :src="posterURL" alt="movie-poster-image">
       <div class="card-body">

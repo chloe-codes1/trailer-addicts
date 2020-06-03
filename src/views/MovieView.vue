@@ -4,7 +4,7 @@
     <button v-if="movies.length === 0" @click="getMovieData" class="btn get-movies-button">영화 가져오기</button>
 
     <MovieList :movies="movies"/>
-    <button v-if="movies.length > 0" @click="scrollToTop" class="button-bottom btn">Top</button>
+    <button v-if="movies.length > 0" @click="scrollToTop" class="button-bottom-clear btn">Top</button>
   </div>
 </template>
 
@@ -38,8 +38,8 @@ export default {
 }
 </script>
 
-<style>
-.button-bottom {
+<style scoped>
+.button-bottom-clear {
     position: fixed;
     right: 4vw;
     bottom: 2vh;
