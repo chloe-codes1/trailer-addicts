@@ -4,11 +4,10 @@
       <div class="media-body">
         {{ video.snippet.title }}
       </div>
-      <div>
+      <div class="embed-responsive embed-responsive-16by9">
         <iframe
+        type="text/html" class="video-iframe embed-responsive-item"
         :src="videoUrl"
-        width="800px"
-        height="400px"
         allowfullscreen
         ></iframe>       
       </div>
