@@ -1,9 +1,28 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+     <nav class="navbar navbar-expand-sm navbar-dark sticky-top d-inline-flex justify-content-between w-100" style="background-color: rgb(14, 39, 78);">
+  <div class="navbar" style="position: absolute; left: 50%; top:0%; transform: translateX(-50%); ">
+     <router-link to="/" class="text-decoration-none"> MOVIE BOX</router-link>
+  </div>
+  <div>
+    <div class="d-block d-sm-none" style="height:40px;" >
+      <button style="position: absolute;left:10px; top: 10px;" class="navbar-toggler mr-auto border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+        <span class="navbar-toggler-icon"></span>
+      </button>  
     </div>
+    <div class="collapse navbar-collapse py-0 w-50" id="navbarNav">
+      <ul class="navbar-nav mr-auto w-50 pr-0">
+          <li class="nav-item active">
+            <router-link to="/" class="text-decoration-none mr-3">Movie</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/video" class="text-decoration-none">Video</router-link>
+          </li>
+      </ul>
+  </div>  
+  </div>
+</nav> 
+      
     <router-view/>
   </div>
 </template>
@@ -17,16 +36,9 @@
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
-}
-
-#nav a {
+.nav-item {
   font-weight: bold;
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
