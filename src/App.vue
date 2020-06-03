@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-md navbar-light sticky-top d-inline-flex justify-content-between w-100" style="background-color:white; box-shadow: 0 2px 2px -2px rgba(0,0,0,.3);">
   <ul class="navbar " style="position: absolute; left: 50%; top:0%; transform: translateX(-50%); ">
   <li class="list-unstyled">
-     <router-link to="/" class="text-decoration-none nav-links py-2 site-logo"> Trailler Addicts</router-link>
+     <router-link to="/" class="text-decoration-none nav-links py-2 site-logo"> Trailer Addicts</router-link>
   </li>
   </ul>
   <div>
