@@ -1,5 +1,5 @@
 <template>
-  <div class="videoView container">
+  <div class="videoView container m-auto">
       <h3 class="mt-5 mb-4">영화 예고편 검색</h3>
       <VideoSearch @input-change="onInputChange" />
       <div>
