@@ -14,7 +14,7 @@
           </div>
           <div class="modal-body">
             <img class="card-img-top" :src="posterURL" alt="movie-poster-image">
-            <p class="rating-area">{{movie.user_rating}} 점</p>
+            <p class="rating-area">★ {{movie.user_rating}}</p>
             <div>{{movie.overview}}</div>
           </div>
           <div class="modal-footer">
