@@ -20,7 +20,7 @@
 
 ### Components
 
-<img src="./README-images/component-structure.png" alt="<" style="zoom:33%;" />																												
+<img src="./README-images/component-structure.png" alt="<" width="50%"  />																												
 
 <br>
 
